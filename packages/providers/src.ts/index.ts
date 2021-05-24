@@ -30,6 +30,7 @@ import { NodesmithProvider } from "./nodesmith-provider";
 import { PocketProvider } from "./pocket-provider";
 import { StaticJsonRpcProvider, UrlJsonRpcProvider } from "./url-json-rpc-provider";
 import { Web3Provider } from "./web3-provider";
+import { CaverProvider } from "./web3-provider";
 import { WebSocketProvider } from "./websocket-provider";
 import { ExternalProvider, JsonRpcFetchFunc } from "./web3-provider";
 
@@ -82,6 +83,7 @@ function getDefaultProvider(network?: Network | string, options?: any): BaseProv
         NodesmithProvider,
         PocketProvider,
         Web3Provider,
+        CaverProvider,
 
         IpcProvider,
     }, options);
@@ -117,6 +119,7 @@ export {
     PocketProvider,
     StaticJsonRpcProvider,
     Web3Provider,
+    CaverProvider,
     WebSocketProvider,
 
     IpcProvider,
